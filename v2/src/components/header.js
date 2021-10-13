@@ -41,10 +41,10 @@ function Header({ siteTitle }) {
             Home
           </Link>
           <Link
-            to={`/page-2`}
+            to={`/contact`}
             className="block mt-4 mr-4 text-white lg:inline-block lg:mt-0 hover:text-white"
           >
-            page 2
+            Contact
           </Link>
         </div>
         <div>
