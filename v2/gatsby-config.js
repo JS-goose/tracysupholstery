@@ -4,7 +4,7 @@ module.exports = {
     description: `An upholstery shop specializing in custom and repair work for marine, ATV, and motorcycles`,
     author: `@JS-goose`,
     url: `https://tracys-upholstery.com`,
-    image: `src/images/gatsby-icon.png`
+    image: `src/images/icons/needle.png`
   },
   flags: {
     THE_FLAG: false
@@ -36,7 +36,7 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/icons/needle.png`, // This path is relative to the root of the site.
       },
     },
     {
