@@ -36,17 +36,11 @@ html {
   font-family: "Gill Sans", sans-serif, system-ui, -apple-system !important;
   display: flex;
   flex-direction: column;
-  overflow-x: hidden;
-}
-
-body section {
-  /* width: calc(100vw - 10px); */
-  width: 100vw;
+  /* overflow-x: hidden; */
 }
 
 main {
   margin: 0 auto;
-  max-width: 1200px;
   padding: 0 1.0875rem 1.45rem;
 }
 
