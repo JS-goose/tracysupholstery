@@ -1,6 +1,7 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React, { useState } from "react"
+import { StaticImage } from "gatsby-plugin-image"
 
 function Header({ siteTitle }) {
   const [isExpanded, toggleExpansion] = useState(false)
@@ -28,34 +29,39 @@ function Header({ siteTitle }) {
         </button>
       </div>
       <div
-        className={`${isExpanded ? `block` : `hidden`
-          } w-full block flex-grow lg:flex lg:items-center lg:w-auto`}
+        className={`${
+          isExpanded ? `block` : `hidden`
+        } w-full block flex-grow lg:flex lg:items-center lg:w-auto`}
       >
         <div className="text-sm lg:flex-grow">
           <Link
             to={`/`}
-            href="#responsive-header"
-            className="block mt-4 mr-4 text-black lg:inline-block lg:mt-0 hover:text-myTeal">
+            className="block mt-4 mr-4 text-black lg:inline-block lg:mt-0 hover:text-myTeal"
+          >
             Home
           </Link>
           <Link
             to={`/contact`}
-            className="block mt-4 mr-4 text-black lg:inline-block lg:mt-0 hover:text-myTeal">
+            className="block mt-4 mr-4 text-black lg:inline-block lg:mt-0 hover:text-myTeal"
+          >
             Contact
           </Link>
           <Link
             to={`/about`}
-            className="block mt-4 mr-4 text-black lg:inline-block lg:mt-0 hover:text-myTeal">
+            className="block mt-4 mr-4 text-black lg:inline-block lg:mt-0 hover:text-myTeal"
+          >
             About
           </Link>
           <Link
             to={`/services`}
-            className="block mt-4 mr-4 text-black lg:inline-block lg:mt-0 hover:text-myTeal">
+            className="block mt-4 mr-4 text-black lg:inline-block lg:mt-0 hover:text-myTeal"
+          >
             Services
           </Link>
           <Link
             to={`/gallery`}
-            className="block mt-4 mr-4 text-black lg:inline-block lg:mt-0 hover:text-myTeal">
+            className="block mt-4 mr-4 text-black lg:inline-block lg:mt-0 hover:text-myTeal"
+          >
             Gallery
           </Link>
         </div>

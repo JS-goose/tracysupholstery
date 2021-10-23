@@ -1,12 +1,10 @@
 import React from "react"
-import { Link } from "gatsby"
-import { StaticImage } from "gatsby-plugin-image"
 
-import SEO from "../components/seo"
+import SeO from "../components/seo"
 
 const IndexPage = () => (
   <div className="index-wrapper flex flex-col items-center">
-    <SEO title="Home" />
+    <SeO title="Home" />
     <div>hello from index</div>
   </div>
 )
