@@ -1,13 +1,22 @@
-import { Link } from "gatsby"
+import { graphql, Link, useStaticQuery } from "gatsby"
 import PropTypes from "prop-types"
 import React, { useState } from "react"
 import { StaticImage } from "gatsby-plugin-image"
 
 function Header({ siteTitle }) {
   const [isExpanded, toggleExpansion] = useState(false)
-
+  
   return (
-    <nav className="flex flex-wrap items-center justify-between p-6 mb-6">
+    <nav className="flex flex-col items-center justify-between p-6 mb-6">
+      <StaticImage
+      src="../images/ui/marine-upholstery-wheel.jpg"
+      alt="a boat wheel"
+      width={1260}
+      height={400}
+      quality={100}
+      placeholder="blurred"
+      layout="constrained"
+      />
       <div className="flex items-center flex-shrink-0 mr-6 text-black">
         <span className="text-xl font-semibold tracking-tight">
           {siteTitle}
