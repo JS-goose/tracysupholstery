@@ -20,9 +20,9 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <MessageBanner data={{title: 'From Layout:', desc: 'Here is the description'}}/>
+      <MessageBanner title={'From Layout:'} desc={'Here is the description to run across the top of the page'}/>
       <Header siteTitle={data.site.siteMetadata.title} />
-      <main>{children}</main>
+      <main className="index-wrapper flex flex-col items-center max-w-7xl">{children}</main>
       <Footer />
     </>
   )

@@ -6,7 +6,7 @@ module.exports = {
   purge: ["./src/**/*.js"],
   theme: {
     extend: {
-      color: {
+      colors: {
         myTeal: `#56caee`,
         myDarkTeal: `#6ca89a8c`,
         myRust: `#8F4700`,

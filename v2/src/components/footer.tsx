@@ -1,7 +1,7 @@
 import React from "react"
 
 const Footer: React.FC = () => (
-  <footer className="flex justify-between">
+  <footer className="flex justify-between bg-myLightRust p-2">
     <div>
       ©{" "}
       <a href="https://jonathansexton.me" rel="noreferrer noopener">

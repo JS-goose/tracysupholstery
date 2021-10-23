@@ -7,17 +7,17 @@ function Header({ siteTitle }) {
   const [isExpanded, toggleExpansion] = useState(false)
   
   return (
-    <nav className="flex flex-col items-center justify-between p-6 mb-6">
+    <nav className="flex flex-col items-center justify-between bg-myLightRust text-white">
       <StaticImage
       src="../images/ui/marine-upholstery-wheel.jpg"
       alt="a boat wheel"
-      width={1260}
+      width={1280}
       height={400}
       quality={100}
       placeholder="blurred"
       layout="constrained"
       />
-      <div className="flex items-center flex-shrink-0 mr-6 text-black">
+      <div className="flex items-center flex-shrink-0 mr-6 p-2">
         <span className="text-xl font-semibold tracking-tight">
           {siteTitle}
         </span>
@@ -25,7 +25,7 @@ function Header({ siteTitle }) {
       <div className="block lg:hidden">
         <button
           onClick={() => toggleExpansion(!isExpanded)}
-          className="flex items-center px-3 py-2 text-black border border-white rounded hover:text-myTeal hover:border-white"
+          className="flex items-center px-3 py-2 text-myDarkRust border border-white rounded hover:text-myTeal hover:border-white"
         >
           <svg
             className="w-3 h-3 fill-current"
@@ -38,38 +38,38 @@ function Header({ siteTitle }) {
         </button>
       </div>
       <div
-        className={`${
+        className={`p-2 ${
           isExpanded ? `block` : `hidden`
         } w-full block flex-grow lg:flex lg:items-center lg:w-auto`}
       >
         <div className="text-sm lg:flex-grow">
           <Link
             to={`/`}
-            className="block mt-4 mr-4 text-black lg:inline-block lg:mt-0 hover:text-myTeal"
+            className="block text-xl font-bold mt-4 mr-4 lg:inline-block lg:mt-0 hover:text-myDarkRust"
           >
             Home
           </Link>
           <Link
             to={`/contact`}
-            className="block mt-4 mr-4 text-black lg:inline-block lg:mt-0 hover:text-myTeal"
+            className="block text-xl font-bold mt-4 mr-4 lg:inline-block lg:mt-0 hover:text-myDarkRust"
           >
             Contact
           </Link>
           <Link
             to={`/about`}
-            className="block mt-4 mr-4 text-black lg:inline-block lg:mt-0 hover:text-myTeal"
+            className="block text-xl font-bold mt-4 mr-4 lg:inline-block lg:mt-0 hover:text-myDarkRust"
           >
             About
           </Link>
           <Link
             to={`/services`}
-            className="block mt-4 mr-4 text-black lg:inline-block lg:mt-0 hover:text-myTeal"
+            className="block text-xl font-bold mt-4 mr-4 lg:inline-block lg:mt-0 hover:text-myDarkRust"
           >
             Services
           </Link>
           <Link
             to={`/gallery`}
-            className="block mt-4 mr-4 text-black lg:inline-block lg:mt-0 hover:text-myTeal"
+            className="block text-xl font-bold mt-4 mr-4 lg:inline-block lg:mt-0 hover:text-myDarkRust"
           >
             Gallery
           </Link>

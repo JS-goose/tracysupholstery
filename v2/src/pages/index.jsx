@@ -3,7 +3,7 @@ import React from "react"
 import SeO from "../components/seo"
 
 const IndexPage = () => (
-  <section>
+  <section className="bg-white w-full p-2">
     <SeO title="Home" />
     <div>Howdy from index</div>
   </section>
